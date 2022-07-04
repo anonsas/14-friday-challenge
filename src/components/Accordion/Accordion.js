@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Accordion.scss';
-import { images } from '../../constants/index';
+
+import { ArrowNarrowDownIcon } from '@heroicons/react/solid';
 
 function Accordion() {
   const [accordionList, setAccordionList] = useState([]);
@@ -28,7 +29,7 @@ function Accordion() {
             onClick={() => openAccordionHandler(accordion?.id)}
           >
             <div className="arrow-container">
-              <img src={images.arrowDown} alt="arrow down" className="arrow-img" />
+              <ArrowNarrowDownIcon className="arrow-img" />
             </div>
             <h3>{accordion?.question}</h3>
           </div>
