@@ -8,7 +8,7 @@ import plus from '../assets/plus.svg';
 import workplacePhone from '../assets/workplace-phone.jpg';
 import workplaceDesktop from '../assets/workplace-desktop.jpg';
 
-export default {
+const images = {
   logo,
   home,
   calendar,
@@ -18,3 +18,4 @@ export default {
   workplacePhone,
   workplaceDesktop,
 };
+export default images;
