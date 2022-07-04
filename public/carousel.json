@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "message": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem esse voluptate iure, voluptas nemo facilis beatae labore exercitationem deleniti error?",
+    "author": "Vincentas, Lithuania"
+  },
+  {
+    "id": 2,
+    "message": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem esse voluptate iure, voluptas nemo facilis beatae labore exercitationem deleniti error?",
+    "author": "Antanas, Latvia"
+  },
+  {
+    "id": 3,
+    "message": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem esse voluptate iure, voluptas nemo facilis beatae labore exercitationem deleniti error?",
+    "author": "Lukas, Lithuania"
+  }
+]

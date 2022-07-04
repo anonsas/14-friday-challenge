@@ -1,0 +1,42 @@
+.fe {
+  margin-top: 9rem;
+  margin-left: 10rem;
+
+  &__text {
+    margin: 0 3.5rem;
+  }
+}
+
+.spinner {
+  height: 10rem;
+  width: 10rem;
+
+  border-radius: 50%;
+  border: 4px solid #eee;
+  border-top: 4px solid #02577a;
+  margin: 8.5rem auto;
+  color: #02577a;
+
+  display: grid;
+  place-items: center;
+
+  animation: spinner 2s;
+}
+
+//==============================
+.theme {
+  margin: 0 auto;
+  padding: 5rem 0;
+  display: grid;
+  place-items: center;
+
+  &__btn {
+    font-size: 2rem;
+    border: 3px solid #02577a;
+    outline: none;
+    padding: 0.5rem 2rem;
+    border-radius: var(--b-radius);
+    background-color: var(--white-color);
+    cursor: pointer;
+  }
+}

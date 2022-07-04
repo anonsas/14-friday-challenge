@@ -1,0 +1,22 @@
+.footer {
+  margin-top: 10rem;
+  color: #02577a;
+  text-align: center;
+  padding-left: 10rem;
+
+  &__line {
+    margin: 0 auto;
+    height: 1px;
+    width: 70%;
+    background-color: #02577a;
+
+    @media screen and (min-width: 36em) {
+      width: 25%;
+    }
+  }
+
+  &__copyright {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+}

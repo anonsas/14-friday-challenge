@@ -1,0 +1,23 @@
+.clock {
+  font-size: 3.6rem;
+
+  border-radius: 25px;
+  background-color: var(--white-color);
+  padding: 2rem;
+  margin: 0 2rem;
+
+  & > p {
+    color: #02577a;
+  }
+
+  &__date {
+    font-size: 2.2rem;
+  }
+
+  @media screen and (min-width: 36em) {
+    order: 1;
+    width: 51.6rem;
+    padding: 2.2rem 4rem;
+    margin: 0;
+  }
+}

@@ -1,0 +1,96 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  width: 10rem;
+  background-color: var(--nav-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  text-align: center;
+  transition: all 0.3s;
+
+  &-logo {
+    margin-top: 5.2rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin-left: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .list__item {
+    overflow: hidden;
+    border-radius: 25px 0px 0px 25px;
+
+    &--link {
+      padding: 1rem 0;
+      text-decoration: none;
+      color: var(--nav-link-color);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & > img {
+        filter: invert(81%) sepia(0%) saturate(1620%) hue-rotate(7deg) brightness(101%)
+          contrast(82%);
+      }
+
+      & > span {
+        display: none;
+      }
+    }
+  }
+}
+
+//================================
+.line-break {
+  height: 3px;
+  width: 62.24px;
+  margin: 2rem auto;
+  background-color: #c4c4c4;
+  transition: all 0.3s;
+}
+
+//================================
+// Navigation Functionality
+@media screen and (min-width: 36em) {
+  .nav:hover {
+    width: 20.6rem;
+
+    .line-break {
+      width: 128.22px;
+    }
+
+    .list__item--link {
+      column-gap: 2rem;
+      justify-content: flex-start;
+      padding-left: 3rem;
+
+      span {
+        display: inline-flex;
+      }
+    }
+  }
+}
+
+//================================
+// ACTIVE & :hover NAV LINK Functionality
+.list__item:hover,
+.list__item--link.active {
+  background-color: var(--white-color);
+
+  & > img {
+    filter: invert(20%) sepia(78%) saturate(2171%) hue-rotate(176deg) brightness(90%)
+      contrast(98%);
+  }
+  & > span {
+    color: #02577a;
+  }
+}

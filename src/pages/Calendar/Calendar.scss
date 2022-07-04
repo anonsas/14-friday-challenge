@@ -1,0 +1,93 @@
+.calendar {
+  margin-top: 4.6rem;
+  margin-left: 10rem;
+  padding: 0 1.4rem;
+}
+
+.react-calendar {
+  width: 100% !important;
+
+  @media screen and (min-width: 36em) {
+    // height: 57.6rem !important;
+    width: 57.6rem !important;
+  }
+}
+
+//=====================================
+.controls {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.2rem;
+
+  &-container {
+    width: 100%;
+    max-width: 57.6rem;
+    background-color: var(--white-color);
+
+    padding: 2.5rem 4.2rem;
+    border-radius: var(--b-radius);
+  }
+
+  &__suggestion {
+    font-size: 2rem;
+    color: #c4c4c4;
+  }
+
+  &__color {
+    height: 1.3rem;
+    width: 14.6rem;
+    border-radius: 25px;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 36em) {
+  .calendar {
+    display: flex;
+    column-gap: 5rem;
+    padding: 0 7rem;
+  }
+  .controls {
+    order: -1;
+    flex: 1;
+    margin-top: 0;
+    row-gap: 5rem;
+
+    &__color {
+      margin-top: 1.8rem;
+      height: 2rem;
+      width: 19rem;
+    }
+  }
+}
+
+//=====================================
+.controls__title-container {
+  font-size: 2.6rem;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: space-between;
+
+  p {
+    letter-spacing: 2px;
+  }
+}
+
+//=====================================
+.controls__add {
+  align-self: flex-end;
+
+  height: 6rem;
+  width: 6rem;
+  padding: 1rem;
+  color: var(--white-color);
+  background-color: #02577a;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media screen and (min-width: 36em) {
+    align-self: flex-start;
+  }
+}

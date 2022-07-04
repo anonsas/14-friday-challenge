@@ -1,0 +1,44 @@
+.carousel-list {
+  width: 100%;
+  padding: 6rem;
+  background-color: var(--white-color);
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  @media screen and (min-width: 36em) {
+    flex-direction: row;
+  }
+}
+
+.review-arrow {
+  height: 4rem;
+  width: 4rem;
+  color: #02577a;
+  cursor: pointer;
+}
+
+.review {
+  max-width: 43rem;
+  padding: 2rem;
+  border: 3px solid #02577a;
+  border-radius: var(--b-radius);
+
+  &__author {
+    text-align: right;
+    margin-top: 2rem;
+  }
+
+  @media screen and (min-width: 36em) {
+    padding: 4rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
